@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,17 +28,48 @@
         </div>
         <ul class="header">
             <li class="hexschool-logo">
-                <h1 href="#">Hex School</h1>
+                <a href="#">HEX School</a>
             </li>
             <li>
                 <ul class="header-item">
                     <li><a href="#">首頁</a></li>
-                    <li><a href="#">產品介紹</a></li>
-                    <li><a href="#">聯絡我們</a></li>
+                    <li class="product-li">
+                        <a href="#" class="product-a">產品介紹</a>
+                        <ul>
+                            <li><a href="#"><p>UI設計</li>
+                            <li><a href="#"><p>前端開發</li>
+                            <li><a href="#"><p>後端課程</li>
+                        </ul>
+                    </li>
+                    <li class="telwe-li">
+                        <a href="#" class="telwe-a"> 聯絡我們</a>
+                        <ul>
+                            <li><a href="#"></a>部落格</li>
+                            <li><a href="#"></a>常見問答</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
         <div class="banner">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="img/banner.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/bg_course.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/bg_index.png" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
             <h2>
                 六角學院
                 <br>
@@ -181,5 +216,8 @@
             </ul>
         </div>
     </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
 </body>
 </html>

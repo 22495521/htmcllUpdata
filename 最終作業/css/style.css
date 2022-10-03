@@ -1,5 +1,6 @@
 
 .wrap{
+    position: relative;
     width: 1002px;
     margin: 0 auto;;
 }
@@ -27,10 +28,11 @@
 }
 .header{
     display: flex;
+    position: relative;
     justify-content: space-between;
 }
 
-.hexschool-logo h1{
+.hexschool-logo a{
     display: block;
     height: 50px;
     width: 224px;
@@ -41,35 +43,70 @@
     white-space:nowrap;
 }
 .header-item{
-    margin: 10px 0;
     display: flex;
 }
 .header-item li a{
     color: #66E0C2;
 }
-.header-item li{
+.header-item > li{
+    text-align: center;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px;
     border: 3px solid #fff;
 }
-.header-item li:hover{
+.header-item >li:hover{
     border-bottom: 3px solid #66E0C2;
 }
+.product-li ul{
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    top:55px;
+    right: 100px;
+    z-index: 10;
+    text-align: center;
+    background-color:  #fff;
+    color: #66E0C2;
+    opacity: 0.8;
+}
+.header-item>li>ul>li{
+    padding:10px 10px ;
+}
+.telwe-li ul{
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    top:55px;
+    right: 5px;
+    z-index: 10;
+    text-align: center;
+    background-color:  #fff;
+    color: #66E0C2;
+    opacity: 0.8;
+}
+
 .banner{
+    overflow: hidden;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     width: 1002px;
     height: 346px;
-    background-image:url(../img/banner.png);
-    background-repeat:no-repeat ;
+    /* background-image:url(../img/banner.png);  */
+    /* background-repeat:no-repeat ;  */
 }
-h2{
-    padding: 50px 15px;
+.banner h2{
+    position:absolute;
+    top:90px;
+    left: 0px;
     color: #fff;
     font-size: 40px;
-    background-color:rgb(146, 146, 146, 0.2)
-}
+    padding: 30px 0 30px 40px;
+    background-color:rgb(146, 146, 146, 0.2);
+    width: 100%;
+    z-index: 2;
+} 
 .course{
     justify-content: space-between;
     display: flex;
@@ -144,6 +181,7 @@ h2{
     margin-left:30px ;
 }
 .inputtext{
+    padding: 8px 0;
     margin: 10px 0 15px 0;
     width: 490px;
 }
@@ -156,13 +194,15 @@ h2{
     background-color:#00CC99;
 }
 .footer{
+    padding: 20px 0 50px 0;
     display: flex;
     justify-content: space-between;
-    padding: 20px 10px 40px 10px;
 }
-.footer li{
-    margin-bottom: 10px;
-}
+
 .footercolor{
     color: #F19DC4;
 }
+.swiper {
+    width: 1002px;
+    height: 500px;
+  }
